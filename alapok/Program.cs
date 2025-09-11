@@ -9,18 +9,21 @@
         }
         static void feladat1(string[] args)
         {
+            Console.WriteLine("1 and 2.feladat");
             Console.WriteLine("Mi a neved?");
             string name = Console.ReadLine()!;
             Console.WriteLine($"Hali {name}");
         }
         static void feladat3(string[] args)
         {
+            Console.WriteLine("3.feladat");
             Console.WriteLine("Minek kell a 2 szerese?");
             int number = int.Parse(Console.ReadLine()!);
             Console.WriteLine($"A számod 2 szerese {number * 2}");
         }
         static void feladat4(string[] args)
         {
+            Console.WriteLine("4.feladat");
             Console.WriteLine("Adj meg ketto számot!");
             int number = int.Parse(Console.ReadLine()!);
             int number2 = int.Parse(Console.ReadLine()!);
@@ -31,6 +34,7 @@
         }
         static void feladat5(string[] args)
         {
+            Console.WriteLine("5.feladat");
             Console.WriteLine("Adj meg ketto számot!");
             int number = int.Parse(Console.ReadLine()!);
             int number2 = int.Parse(Console.ReadLine()!);
@@ -49,6 +53,7 @@
         }
         static void feladat6(string[] args)
         {
+            Console.WriteLine("6.feladat");
             Console.WriteLine("Adj meg harom számot!");
             int number = int.Parse(Console.ReadLine()!);
             int number2 = int.Parse(Console.ReadLine()!);
@@ -71,6 +76,7 @@
         }
         static void feladat7(string[] args)
         {
+            Console.WriteLine("7.feladat");
             // 2 oldal osszege nagyobb mint a harmadik
             Console.WriteLine("Add meg a harmszog oldalait");
             int number = int.Parse(Console.ReadLine()!);
@@ -95,6 +101,7 @@
         }
         static void feladat8(string[] args)
         {
+            Console.WriteLine("8.feladat");
             Console.WriteLine("Adj meg ketto számot!");
             int number = int.Parse(Console.ReadLine()!);
             int number2 = int.Parse(Console.ReadLine()!);
