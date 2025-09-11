@@ -95,7 +95,10 @@
         }
         static void feladat8(string[] args)
         {
-
+            Console.WriteLine("Adj meg ketto számot!");
+            int number = int.Parse(Console.ReadLine()!);
+            int number2 = int.Parse(Console.ReadLine()!);
+            Console.WriteLine($"A ket szam szamtani es mertani kozepe: {(number + number2) % 2}");
         }
     }
 }
