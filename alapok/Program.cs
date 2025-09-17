@@ -1,4 +1,6 @@
-﻿namespace alapok
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace alapok
 {
     internal class Program
     {
@@ -186,6 +188,135 @@
             double terulet = Math.PI * r * r;
             Console.WriteLine("A kör kerülete: {0:F2}", kerulet);
             Console.WriteLine("A kör területe: {0:F2}", terulet);
+        }
+        static void feladat15(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+            for (int i = 1; i <= number; i++)
+            {
+                Console.Write(i + " ");
+            }
+        }
+        static void feladat16(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+            for (int i = 1; i <= number; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        static void feladat17(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+            for (int i = 1; i <= number; i++)
+            {
+                if (number % i == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+        static void feladat18(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine());
+            int osszeadas = 0;
+            for (int i = 1; i <= number; i++)
+            {
+                if (number % i == 0)
+                {
+                    osszeadas += i;
+                }
+            }
+            Console.WriteLine("Az osztók összege: " + osszeadas);
+        }
+        static void feladat19(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine());
+            int osszeadas = 0;
+            for (int i = 1; i <= number; i++)
+            {
+                if (number % i == 0)
+                {
+                    osszeadas += i;
+                }
+            }
+            if (osszeadas == 2 * number)
+            {
+                Console.WriteLine("Tökéletes szám.");
+            }
+            else
+            {
+                Console.WriteLine("Nem tökéletes szám.");
+            }
+        }
+        static void feladat20(string[] args)
+        {
+            Console.Write("Hatványalap: ");
+            int defa = int.Parse(Console.ReadLine()!);
+            Console.Write("Kitevő: ");
+            int kit = int.Parse(Console.ReadLine()!);
+            Console.WriteLine("Hatványérték: " + Math.Pow(defa, kit));
+        }
+        static void feladat21(string[] args)
+        {
+            int number;
+            do
+            {
+                Console.Write("Adj meg egy pozitív számot: ");
+                number = int.Parse(Console.ReadLine()!);
+            } while (number <= 0);
+            Console.WriteLine("Köszönöm! A szám: " + number);
+        }
+        static void feladat22(string[] args)
+        {
+            int osszeadas = 0;
+            while (true)
+            {
+                int number = int.Parse(Console.ReadLine()!);
+                if (number >= 10)
+                {
+                    Console.WriteLine("10 vagy nagyobb számot adtál meg, kilépek.");
+                }
+                else
+                {
+                    osszeadas += number;
+                }
+            }
+            Console.WriteLine("A beolvasott számok összege: " + osszeadas);
+        }
+        static void feladat23(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+            int original = number;
+            List<int> f = new List<int>();
+            while (number % 2 == 0)
+            {
+                f.Add(2);
+                number /= 2;
+            }
+            f.Add(number);
+            Console.Write(original + " = ");
+            Console.WriteLine(string.Join("*", f));
+        }
+        static void feladat24(string[] args)
+        {
+            string szo;
+            do
+            {
+                Console.Write("Írj be egy szót: ");
+                szo = Console.ReadLine()!;
+            } while (szo != "alma");
+            Console.WriteLine("Az alma gyümölcs!");
+        }
+        static void feladat25(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+            int original = number;
+            while (number >= 3)
+            {
+                number -= 3;
+            }
+            Console.WriteLine($"{original} = {original / 3}*3+{original % 3}");
         }
     }
 }
