@@ -321,7 +321,7 @@ namespace alapok
         {
             Console.Write("Adj meg egy számot: ");
             int number = int.Parse(Console.ReadLine()!);
-            if (number % number == 1)
+            if (number % 2 == 1)
             {
                 Console.WriteLine("A megadott szám prím szám!");
             }
@@ -341,15 +341,16 @@ namespace alapok
         static void feladat28 (string[] args)
         {
             int number = int.Parse(Console.ReadLine()!);
-            if (number == 0)
+            int (int i = 1; )
             {
+                number % 2 == 1;
                 Console.WriteLine();
             }
         }
         static void feladat29 (string[] args)
         {
             int number = int.Parse(Console.ReadLine()!);
-
+            
         }
         static void feladat30 (string[] args)
         {
