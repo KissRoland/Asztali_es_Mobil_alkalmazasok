@@ -4,7 +4,6 @@ namespace alapok
 {
     internal class Program
     {
-        // 14. feldatig kell
         static void Main(string[] args)
         {
             Console.WriteLine("Hello world!");
@@ -317,6 +316,48 @@ namespace alapok
                 number -= 3;
             }
             Console.WriteLine($"{original} = {original / 3}*3+{original % 3}");
+        }
+        static void feladat26(string[] args)
+        {
+            Console.Write("Adj meg egy számot: ");
+            int number = int.Parse(Console.ReadLine()!);
+            if (number % number == 1)
+            {
+                Console.WriteLine("A megadott szám prím szám!");
+            }
+            else
+            {
+                Console.WriteLine("A megadott szám nem prím szám!");
+            }
+        }
+        static void feladat27(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+            for (int i = 1; i <= number % number && number == 1; i++)
+            {
+                Console.Write(i + " ");
+            }
+        }
+        static void feladat28 (string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+            if (number == 0)
+            {
+                Console.WriteLine();
+            }
+        }
+        static void feladat29 (string[] args)
+        {
+            int number = int.Parse(Console.ReadLine()!);
+
+        }
+        static void feladat30 (string[] args)
+        {
+
+        }
+        static void feladat31 (string[] args)
+        {
+
         }
     }
 }
