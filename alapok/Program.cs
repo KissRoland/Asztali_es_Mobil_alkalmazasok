@@ -281,6 +281,7 @@ namespace alapok
                     osszeadas += number;
                 }
             }
+            // vegtelen ciklus lehetosege a hiba
             Console.WriteLine("A beolvasott számok összege: " + osszeadas);
         }
         static void feladat23(string[] args)
